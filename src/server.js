@@ -1,10 +1,9 @@
-var express = require("express");
+var express = require('express');
 var app = express();
 
-app.get('/', function(res, req){
-   res.send('Hello World');
+app.get('/', function (req, res) {
+    res.send('Hello World!');
 });
-
-app.listen(8080, function(){
-   console.log("Express");
-}); 
+app.listen(8080, function () {
+    console.log('Express App on port 8080!');
+});
